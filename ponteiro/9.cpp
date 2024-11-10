@@ -1,23 +1,22 @@
 #include <iostream>
 #include <cmath>
+using namespace std;
 
-void frac(float num, int &inteiro, float &frac) {
-    inteiro = static_cast<int>(num);
-    frac = num - inteiro;
+void frac(float num_real, float &frac_part, int &inteiro) {
+    inteiro = static_cast<int>(num_real);
+    frac_part = num_real - inteiro;
 }
 
 int main() {
-    float num;
+    float num_real, frac;
     int inteiro;
-    float frac_part;
+    
+    cout << "Digite um número real" << '\n';
+    cin >> num_real;
 
-    std::cout << "Digite um número real: ";
-    std::cin >> num;
-
-    frac(num, inteiro, frac_part);
-
-    std::cout << "Parte inteira: " << inteiro << std::endl;
-    std::cout << "Parte fracionária: " << frac_part << std::endl;
-
+    frac(num_real, frac, inteiro);
+    cout << "Parte fracionária" << frac << '\n';
+    cout << "Parte inteita" << inteiro << '\n';
+    
     return 0;
 }
