@@ -16,7 +16,8 @@ int negativos(vector<float> &vec, int n) {
         }
     }
     
-    cout << "Há" << negativos << "número(s) negativos' << \n';
+    cout << "Há" << negativos << "número(s) negativos" << '\n';
+    return negativos;
 }
 
 int main() {

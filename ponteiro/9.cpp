@@ -8,15 +8,15 @@ void frac(float num_real, float &frac_part, int &inteiro) {
 }
 
 int main() {
-    float num_real, frac;
+    float num_real, frac_part;
     int inteiro;
     
     cout << "Digite um número real" << '\n';
     cin >> num_real;
 
-    frac(num_real, frac, inteiro);
-    cout << "Parte fracionária" << frac << '\n';
-    cout << "Parte inteita" << inteiro << '\n';
+    frac(num_real, frac_part, inteiro);
+    cout << "Parte fracionária" << frac_part << '\n';
+    cout << "Parte inteira" << inteiro << '\n';
     
     return 0;
 }
